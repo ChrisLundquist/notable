@@ -20,5 +20,7 @@
   <%= @car.color %>
 </p>
 
+<%= render :partial => "notable/notes/note", :locals => { :notable => @car } %>
+
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>
