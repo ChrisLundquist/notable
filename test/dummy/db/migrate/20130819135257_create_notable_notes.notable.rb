@@ -1,3 +1,4 @@
+# This migration comes from notable (originally 20130815023310)
 class CreateNotableNotes < ActiveRecord::Migration
   def change
     create_table :notable_notes do |t|
