@@ -11,3 +11,10 @@
 // about supported directives.
 //
 //= require_tree .
+//
+
+var parse_timestamps = function(index, element) {
+    console.log(element.innerHTML)
+}
+
+$(".notable_utc_timestamp").each(parse_timestamps)
