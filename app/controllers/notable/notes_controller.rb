@@ -22,7 +22,7 @@ module Notable
     end
 
     def new
-      @note = Note.new(params[:note])
+      @note = Note.new(:notable_id => params[:note][:notable_id], :notable_type => params[:note][:notable_type])
 
       respond_to do |format|
         format.html # new.html.erb
