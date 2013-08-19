@@ -36,7 +36,7 @@ module Notable
     end
 
     def create
-      @note = Note.new(params[:note])
+      @note = Note.new(:notable_id => params[:note][:notable_id], :notable_type => params[:note][:notable_type], :body => params[:note][:body])
 
       respond_to do |format|
         if @note.save
