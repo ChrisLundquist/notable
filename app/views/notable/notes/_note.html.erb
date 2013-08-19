@@ -4,7 +4,7 @@
   <div id="x_new_note"></div>
   <ul>
     <% notable.notes.each do |note| %>
-      <li><p><%= note %></p></li>
+        <li><p class="notable_utc_timestamp"><%= note.updated_at %></p><p class="notable_body"><%= note.body %></p></li>
     <% end %>
   </ul>
 </div>
