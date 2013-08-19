@@ -1,3 +1,10 @@
 = Notable
 
+Add this line to your application's Gemfile:
+
+gem 'notable'
+And then execute:
+
+$ bundle
+
 This project rocks and uses MIT-LICENSE.

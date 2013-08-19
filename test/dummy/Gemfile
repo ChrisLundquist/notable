@@ -1,6 +1,7 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
+gem "notable", :path => "../.."
 gem "jquery-rails"
 gem "rails"
 gem "sqlite3"
