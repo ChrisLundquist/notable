@@ -14,7 +14,12 @@
 //
 
 var parse_timestamps = function(index, element) {
-    console.log(element.innerHTML)
+    var date = new Date(element.innerHTML)
+    element.innerHTML = date.toLocaleString()
 }
 
-$(".notable_utc_timestamp").each(parse_timestamps)
+var localize_timestamps = function() {
+    $(".notable_utc_timestamp").each(parse_timestamps)
+}
+
+$(document).on("ready", localize_timestamps)
